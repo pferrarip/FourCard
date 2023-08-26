@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --lightgray: hsl(0, 0%, 98%);
+  --DarkBlue: hsl(234, 12%, 34%);
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+  --fontcolor: hsl(229, 6%, 66%);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+}
+.card-title {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#t1 {
+  font-weight: 200;
+}
+#t2 {
+  text-align: center;
+  color: var(--DarkBlue);
+  font-weight: 600;
+}
+.paragraph {
+  width: 35rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#content {
+  text-align: center;
+  color: var(--fontcolor);
+  font-size: 1.2rem;
+}
+.container {
+  width: 100%;
+  min-height: 95vh;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+}
+.left {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.center {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 4rem;
+}
+.right {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-supervisor {
+  position: relative;
+  width: 100%;
+  height: 40%;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  background-color: var(--lightgray);
+  padding: 2rem;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.top-supervisor {
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  height: 5%;
+  width: 100%;
+  background-color: var(--Cyan);
+}
+.card-team {
+  width: 100%;
+  height: 40%;
+  background-color: white;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+  padding: 2rem;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.top-team {
+  height: 5%;
+  width: 100%;
+  background-color: var(--Red);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.card-karma {
+  width: 100%;
+  height: 40%;
+  background-color: var(--lightgray);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+  padding: 2rem;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.top-karma {
+  height: 5%;
+  width: 100%;
+  background-color: var(--Orange);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.card-cauculator {
+  position: relative;
+  width: 100%;
+  height: 40%;
+  background-color: white;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.top-calculator {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 5%;
+  width: 100%;
+  background-color: var(--Blue);
+}
+.icon {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: end;
+}
+h3 {
+  font-size: 1.5rem;
+  color: var(--DarkBlue);
+  font-weight: 800;
+}
+#text {
+  color: var(--fontcolor);
+}
+@media (max-width: 1000px) {
+  body {
+    gap: 1rem;
+  }
+  .card-title {
+    align-items: center;
+    width: 90%;
+  }
+  #t1 {
+    font-size: 1.3rem;
+  }
+  #t2 {
+    font-size: 1.3rem;
+  }
+  #content {
+    font-size: 0.9rem;
+  }
+  .container {
+    min-height: 100vh;
+    flex-direction: column;
+  }
+  .left {
+    width: 100%;
+  }
+  .center {
+    width: 100%;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media (min-width: 1920px) {
+  .container {
+    height: 50vh;
+  }
+  .left {
+    height: 80%;
+  }
+  .center {
+    height: 80%;
+  }
+  .right {
+    height: 80%;
+  }
+  #text {
+    font-size: 1.4rem;
+  }
+}
